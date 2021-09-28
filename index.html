@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taller 1</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col border border-dark">
+                    <h1 id = 'studentName' ></h1>
+                    <img id = 'studentAvatar' class="img-fluid max-width: 100% height: auto" alt="Avatar">`
+                    <h2>Datos Personales</h2>
+                    <table class = "table table-striped table-bordered">
+                        <tbody id = 'student'>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col border border-dark">
+                    <h2 class = "mt-5">Cursos Actuales</h2>
+                    <table class="table">
+                        <thead class="thead-dark">
+                           <tr>
+                              <th>Curso</th>
+                              <th>Profesor</th>
+                              <th>Créditos</th>
+                           </tr>
+                        </thead>
+                        <tbody id="courses">
+                        </tbody>
+                    </table>
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                          <div class="col">
+                              <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                          </div>
+                          <div class="col">
+                              <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                          </div>
+                        </div>
+                    </form>
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                          <div class="col">
+                              <input type="number" class="form-control" id="box-lim-inf" placeholder="Cred lim inferior">
+                          </div>
+                          <div class="col">
+                              <input type="number" class="form-control" id="box-lim-sup" placeholder="Cred lim superior">
+                        </div>
+                          <div class="col">
+                              <button type="button" id="button-filterByCreds" class="btn btn-success">Aplicar</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./scripts/course.js" ></script>
+        <script type="module" src="./scripts/dataCourses.js" ></script>
+        <script type="module" src="./scripts/main.js"></script>
+    </body>
+    
+    
+    
+</html>
